@@ -105,19 +105,6 @@ const onBeforeLeave = scrollPromise.pending
       </Navbar>
     </slot>
 
-    <div class="sidebar-mask" @click="toggleSidebar(false)" />
-
-    <slot name="sidebar">
-      <Sidebar>
-        <template #top>
-          <slot name="sidebar-top" />
-        </template>
-        <template #bottom>
-          <slot name="sidebar-bottom" />
-        </template>
-      </Sidebar>
-    </slot>
-
     <slot name="page">
       <Home v-if="frontmatter.home" />
 
